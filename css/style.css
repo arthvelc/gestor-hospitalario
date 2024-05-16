@@ -73,4 +73,23 @@ body{
     cursor: pointer;
     font-size: 1.6rem;
     color: var(--color-blanco);
+    margin-bottom: 2rem;
+}
+.form-group button:hover {
+    background-color: rgba(101, 184, 101, 0.8);
+    color:#2A4B69;
+}
+.form-group a{
+    text-decoration: none;
+    text-align: center;
+    color: var(--color-blanco);
+    background-color: var(--color-azul-oscuro);
+    border-radius: .5rem;
+    margin: 0 auto;
+    padding: 1rem 8rem;
+}
+.form-group a:hover{
+    color: var(--color-azul-oscuro);
+    font-weight: bold;
+    background-color: var(--color-azul-claro);
 }
