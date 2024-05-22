@@ -1,0 +1,29 @@
+
+{% extends "./layouts/layout.html" %}
+{% load static %}
+{% block title %}Inicio{% endblock title %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+{% endblock styles %}
+{% block content %}
+    <h1 class="main__title">Bienvenido al gestor de base de datos del hospital</h1>
+    
+    <section class = "section__container">
+        <div class="section__container-question">
+            <h2 class="section__container-title">¿Qué desea hacer?</h2>
+        </div>
+        <div class="section__container-bottons">
+            <button class="section__container-option">
+                <a href="#">Insertar nuevos datos</a>
+            </button>
+            <button class="section__container-option">
+                <a href="#">Actualizar Datos</a>
+            </button>
+            <button class="section__container-option">
+                <a href="#">Borrar datos</a>
+            </button>
+            
+        </div>
+    </section>
+
+{% endblock content %}
