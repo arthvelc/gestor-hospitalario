@@ -1,0 +1,99 @@
+# Archivos de entorno y configuración
+*.env
+
+# Archivos compilados de Python
+*.pyc
+__pycache__/
+
+# Archivos de bases de datos locales
+*.sqlite3
+
+# Archivos de migraciones de Django
+*/migrations/*
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Archivos del entorno virtual
+env/
+venv/
+ENV/
+.venv/
+
+# Archivos de dependencias instaladas
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs y archivos temporales
+*.log
+*.pot
+*.py[cod]
+*.swp
+*~
+*.swo
+*.bak
+*.tmp
+*.old
+
+# Archivos generados por Sentry
+.sentryclirc
+
+# Archivos de cobertura de pruebas
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+.nox/
+.coverage.*
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Archivos y directorios de test
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+.tox/
+.cache
+
+# Archivos de configuración específicos de IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Archivos de configuraciones específicas de editores
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+.ionide/
+
+# Archivos específicos de Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Archivos específicos de Spyder
+.spyderproject
+.spyproject
+
+# Archivos de archivos comprimidos y empaquetados
+*.gz
+*.zip
+*.tar
+*.rar
+*.tar.gz
+*.tar.xz
+*.tar.bz2
+*.tgz
