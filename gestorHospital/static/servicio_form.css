@@ -1,0 +1,62 @@
+:root {
+    --primary-color: #82d5dd; /* Color primario */
+    --secondary-color: #70c3cb; /* Color secundario */
+    --accent-color: #5faeb6; /* Color de acento */
+    --background-color: #f0f8fa; /* Color de fondo */
+    --text-color: #333333; /* Color de texto */
+    --font-family: 'Roboto', sans-serif; /* Fuente de texto */
+}
+
+.title {
+    color: var(--text-color);
+    font-size: 2,4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.form__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5rem;
+
+}
+
+.form__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+label{
+    font-size: 1.6rem;
+    color: var(--text-color);
+}
+
+input{
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: .5rem;
+    border: 1px solid #333333;
+    font-size: 1.6rem;
+
+}
+
+.btn-submit {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1.6rem; 
+    color: var(--background-color);
+    margin-top: 3rem;
+}
+
+.btn-submit:hover {
+    background-color: var(--accent-color);
+}

@@ -1,0 +1,72 @@
+:root {
+    --primary-color: #82d5dd; /* Color primario */
+    --secondary-color: #70c3cb; /* Color secundario */
+    --accent-color: #5faeb6; /* Color de acento */
+    --background-color: #f0f8fa; /* Color de fondo */
+    --azul-miguelito: #0244c0;
+    --text-color: #333333; /* Color de texto */
+    --font-family: 'Roboto', sans-serif; /* Fuente de texto */
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.paciente__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.link {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.patient {
+    margin:2rem;
+    border-bottom: 1px solid 1px solid var(--text-color);
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.age {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+}
+
+.patient .link{
+    color : var(--accent-color);
+    background-color: #fff;
+    border: none;
+
+}
+
+.patient .link:hover{
+    background-color: none;
+    color: white;
+}
+
+.link:hover {
+    background-color: var(--secondary-color);
+}
+

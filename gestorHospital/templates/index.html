@@ -1,4 +1,3 @@
-
 {% extends "./layouts/layout.html" %}
 {% load static %}
 {% block title %}Inicio{% endblock title %}
@@ -8,21 +7,21 @@
 {% block content %}
     <h1 class="main__title">Bienvenido al gestor de base de datos del hospital</h1>
     
-    <section class = "section__container">
-        <div class="section__container-question">
-            <h2 class="section__container-title">¿Qué desea hacer?</h2>
+    <section class="section__container">
+        <div class="section__item">
+            <h2 class="section__title">Servicios</h2>
+            <p class="section__description">Administra los servicios que ofrece el hospital</p>
+            <a href="{% url 'servicio_list' %}" class="section__button">Ir a servicios</a>
         </div>
-        <div class="section__container-bottons">
-            <button class="section__container-option">
-                <a href="#">Insertar nuevos datos</a>
-            </button>
-            <button class="section__container-option">
-                <a href="#">Actualizar Datos</a>
-            </button>
-            <button class="section__container-option">
-                <a href="#">Borrar datos</a>
-            </button>
-            
+        <div class="section__item">
+            <h2 class="section__title">Pacientes</h2>
+            <p class="section__description">Administra los pacientes que están en el hospital</p>
+            <a href="{% url 'paciente_list' %}" class="section__button">Ir a Pacientes</a>
+        </div>
+        <div class="section__item">
+            <h2 class="section__title">Pagos</h2>
+            <p class="section__description">Administra las transacciones del hospital</p>
+            <a href="{% url 'pago_list' %}" class="section__button">Ir a Pagos</a>
         </div>
     </section>
 

@@ -1,0 +1,18 @@
+{% extends "./layouts/layout.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'paciente_form.css' %}">
+{% endblock styles %}
+{% block title %}Nuevo Paciente{% endblock %}
+
+{% block content %}
+<h1 class="title">Nuevo Paciente</h1>
+<div class="form">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="boton" type="submit">Guardar</button>
+    </form>
+</div>
+
+{% endblock %}

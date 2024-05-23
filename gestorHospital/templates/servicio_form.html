@@ -1,0 +1,18 @@
+{% extends "./layouts/layout.html" %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'servicio_form.css' %}">
+{% endblock %}
+{% block title %}Nuevo Servicio{% endblock %}
+
+{% block content %}
+<h1 class="title">Nuevo Servicio</h1>
+<div class = "form__container">
+    <form method="post" class = "form__item">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn-submit" type="submit">Guardar</button>
+    </form>
+</div>
+
+{% endblock %}

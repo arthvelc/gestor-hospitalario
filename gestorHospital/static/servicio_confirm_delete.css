@@ -1,0 +1,58 @@
+:root {
+    --primary-color: #82d5dd; /* Color primario */
+    --secondary-color: #70c3cb; /* Color secundario */
+    --accent-color: #5faeb6; /* Color de acento */
+    --background-color: #f0f8fa; /* Color de fondo */
+    --text-color: #333333; /* Color de texto */
+    --font-family: 'Roboto', sans-serif; /* Fuente de texto */
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.confirmation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
+}
+
+
+.confirmation p {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.delete-button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.delete-button:hover {
+    background-color: var(--accent-color);
+}
+
+.cancel-link {
+    color: var(--secondary-color);
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+.cancel-link:hover {
+    color: var(--accent-color);
+}

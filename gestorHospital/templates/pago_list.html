@@ -1,0 +1,27 @@
+{% extends "./layouts/layout.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'pago_list.css' %}">
+{% endblock styles %}
+
+{% block title %}Listado de Pagos{% endblock %}
+
+{% block content %}
+<h1 class="title">Pagos</h1>
+
+
+
+<div class="payment-list">
+    <a class="link" href="{% url 'pago_create' %}">Nuevo Pago</a>
+    <ul>
+        {% for pago in object_list %}
+        <li class="payment-item">
+            {{ pago.id_servicio.nombre_servicio }} - {{ pago.id_paciente.nombre_paciente }} {{ pago.id_paciente.apellido_paciente }} - {{ pago.monto }} {{ pago.metodo_pago }}
+            <a class="edit-link" href="{% url 'pago_update' pago.pk %}">Editar</a>
+            <a class="delete-link" href="{% url 'pago_delete' pago.pk %}">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "./layouts/layout.html" %}
+{% load static %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'servicio_confirm_delete.css' %}">
+{% endblock %}
+
+{% block title %}Eliminar Servicio{% endblock %}
+
+{% block content %}
+
+<h1 class="title">Eliminar Servicio</h1>
+
+<div class="confirmation">
+    <p>¿Estás seguro de que quieres eliminar el servicio "{{ object.nombre_servicio }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button class="delete-button" type="submit">Sí, eliminar</button>
+        <a class="cancel-link" href="{% url 'servicio_list' %}">Cancelar</a>
+    </form>
+</div>
+
+{% endblock %}

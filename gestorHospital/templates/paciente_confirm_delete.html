@@ -1,0 +1,20 @@
+{% extends "./layouts/layout.html" %}
+{% load static %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'paciente_confirm_delete.css' %}">
+{% endblock styles %}
+{% block title %}Eliminar Paciente{% endblock %}
+
+{% block content %}
+<h1 class="title">Eliminar Paciente</h1>
+
+<div class = "container">
+    <p class="confirmation-message">¿Estás seguro de que quieres eliminar al paciente "{{ object.nombre_paciente }} {{ object.apellido_paciente }}"?</p>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" class="delete-button">Sí, eliminar</button>
+        <a href="{% url 'paciente_list' %}" class="cancel-link">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
+

@@ -1,0 +1,12 @@
+{% extends "./layouts/layout.html" %}
+
+{% block title %}Nuevo Pago{% endblock %}
+
+{% block content %}
+<h1>Nuevo Pago</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}

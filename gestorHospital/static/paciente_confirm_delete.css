@@ -1,0 +1,47 @@
+:root {
+    --primary-color: #82d5dd; /* Color primario */
+    --secondary-color: #70c3cb; /* Color secundario */
+    --accent-color: #5faeb6; /* Color de acento */
+    --background-color: #f0f8fa; /* Color de fondo */
+    --azul-miguelito: #0244c0;
+    --text-color: #333333; /* Color de texto */
+    --font-family: 'Roboto', sans-serif; /* Fuente de texto */
+}
+.title {
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+.confirmation-message {
+    color: var(--text-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.delete-button {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-link {
+    color: var(--secondary-color);
+    margin-left: 10px;
+    text-decoration: none;
+}

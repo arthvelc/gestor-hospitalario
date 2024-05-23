@@ -65,7 +65,7 @@ html{
 .main{
     padding: 2rem 0;
     font-family: var(--font-family);
-    height: 100%;
+    height: calc(100vh - 11rem);
 }
 
 .footer{
@@ -76,4 +76,7 @@ html{
     font-family: var(--font-family);
     box-shadow: #333333 0 0 .5rem;
     height: 6rem;
+    
 }
+
+

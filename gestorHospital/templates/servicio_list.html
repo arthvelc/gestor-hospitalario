@@ -1,0 +1,23 @@
+{% extends "./layouts/layout.html" %}
+{%load static%}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'servicio_list.css' %}">
+{% endblock %}
+
+{% block title %}Servicios{% endblock %}
+
+{% block content %}
+<h1 class="servicios-title">Servicios</h1>
+<div class = "servicio__container">
+    <a class="nuevo-servicio-link" href="{% url 'servicio_create' %}">Nuevo Servicio</a>
+    <ul class="servicios-list">
+        {% for servicio in object_list %}
+        <li class="servicio-item">{{ servicio.nombre_servicio }} - {{ servicio.costo_servicio }}
+            <a class="editar-servicio-link" href="{% url 'servicio_update' servicio.pk %}">Editar</a>
+            <a class="eliminar-servicio-link" href="{% url 'servicio_delete' servicio.pk %}">Eliminar</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #82d5dd; /* Color primario */
+    --secondary-color: #70c3cb; /* Color secundario */
+    --accent-color: #5faeb6; /* Color de acento */
+    --background-color: #f0f8fa; /* Color de fondo */
+    --azul-miguelito: #0244c0;
+    --text-color: #333333; /* Color de texto */
+    --font-family: 'Roboto', sans-serif; /* Fuente de texto */
+}
+
+.title {
+    color: var(--primary-color);
+    font-size: 2.4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+.payment_list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+}
+.link {
+    color: var(--background-color);
+    text-decoration: none;
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+}
+
+.payment-list {
+    margin-top: 20px;
+}
+
+.payment-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+.edit-link,
+.delete-link {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-left: 10px;
+}
